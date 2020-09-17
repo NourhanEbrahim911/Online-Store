@@ -1,0 +1,60 @@
+body{
+    background: white;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 60px;
+    font-family: sans-serif;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+}
+
+.slider{
+    width: 400px;
+    overflow: hidden;
+    margin: auto;
+   /* margin-top: 30%;*/
+    text-align: center;
+}
+
+.slider ul{
+    padding: 0;
+    list-style: none;
+    width: 4000px;
+    position: relative;
+    animation: sliding 20s ease-in-out infinite;
+    
+}
+
+.slider ul li{
+    float: left;
+    position: relative;
+}
+
+.slider h5{
+    margin: 0;
+    background: #DDD;
+    padding: 15px;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 25px;
+}
+
+@keyframes sliding{
+    0%{left: 0}
+    10%{left: -400px}
+    20%{left: -800px}
+    30%{left: -1200px}
+    40%{left: -1600px}
+    50%{left: -2000px}
+    60%{left: -2400px}
+    70%{left: -2800px}
+    80%{left: -3200px}
+    90%{left: -3600px}
+}

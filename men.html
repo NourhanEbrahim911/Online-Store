@@ -1,0 +1,170 @@
+<html>
+   <head><link href="men.css" rel="stylesheet"/></head>
+   <body>
+     <!-- nav bar-->
+        <div class="before-nav" >
+            <div class="logo">
+                <img src="smile.png" alt="you should smiler" title="Smile Please 😊" width="80px" height="80px"/>
+                <p id="logo"> </p>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search entire store here"/>
+                <img src="search.png" width="40px" height="40px"/>
+        
+            </div>
+            <div class="icons">
+              <ul>
+                  <li>
+                      <div class="drop">
+                          <a href="login.html" class="login">
+                              <img src="login4.png" width="40px" height="40px" title="login"/>
+                          </a>
+                      
+                      <div class="dropdown">
+                        <form>
+                           <label>Email Address*</label>
+                            <input type="email" placeholder="Enter you email"/>
+                            <label>Password*</label>
+                            <input type="password" placeholder="Enter you password"/>
+                            <h6>* Required Fields</h6>
+                            <a href="#">Forgot Your Password?</a>
+                            <h6>Don't have an account?</h6>
+                            <a href="#">Sign Up</a>
+                            <input type="button" value="LOGIN"/>
+                          
+                        </form>
+                      
+                      </div
+                          </div>
+                  </li>
+                  <h4>Login</h4>
+                  <li>
+                      <a href="register.htm">
+                      <img src="reg2.png"width="40px" height="40px" title="register"/>
+                      </a>
+                  </li>
+                  <h4>Register</h4>
+                  
+              </ul>
+            
+            
+            </div>
+        </div>
+        <div class="nav-bar">
+        <ul>
+            <li><a href="home.html" > HOME</a> </li>
+            <li><a href="women.html">WOMEN</a> </li>
+            <li><a href="men.htm" class="active">MEN</a> </li>
+        </ul>
+        
+        </div>
+            
+            
+      <!--sidebar-->
+            <table border="1">
+              <tr onclick="color(0)">
+                  <td class="col">
+                      <a class="link" onclick="color(0)" href="pants.htm" target="x">Pants</a></td>  
+              </tr>
+              <tr onclick="color(1)">
+                  <td class="col">
+                      <a class="link" onclick="color()" href="shorts.htm" target="x">Shorts</a></td>
+              </tr>
+                <tr onclick="color(2)">
+                  <td class="col">
+                      <a class="link" onclick="color()" href="shirts.htm" target="x">T-Shirts</a></td>
+              </tr>
+                <tr onclick="color(3)" >
+                  <td class="col">
+                      <a class="link" onclick="color()" href="chemise.htm" target="x">Chemise</a></td>
+              </tr>
+                <tr onclick="color(4)">
+                  <td class="col">
+                      <a class="link" onclick="color()" href="sweat.htm" target="x">Sweat-Shirts</a></td>
+              </tr>
+              <tr onclick="color(5)">
+                  <td class="col">
+                      <a class="link" onclick="color()" href="jacket.htm" target="x">Jacket & Coats</a></td>
+              </tr>
+              <tr onclick="color(6)">
+                  <td class="col">
+                      <a class="link" onclick="color()" href="shoes.htm" target="x">Shoes</a></td>
+              </tr>
+              <tr onclick="color(7)">
+                  <td class="col">
+                      <a class="link" onclick="color()" href="accesory.htm" target="x">Accessories</a></td>
+              </tr>
+            </table>
+            <iframe src="slide.html" name="x"></iframe>
+            
+            
+        
+      <!--footer-->        
+      <footer>
+        <div class="about">
+              <h2>About Us</h2>
+              <p>Smile a fashion brand with our delvelopment office<br> based in Alicante,Spain and design studio in Milian,Italy.</p>
+              <img src="phone%204.png" alt="phone" width="50px" height="50px"/>
+              <p class="our">0112567964</p>
+              <div class="clear"></div>
+              <img src="message%203.png" alt="message" width="40px" height="40px"/>
+              <p class="our">orders@smile.com</p>
+              <div class="clear"></div>
+           
+        </div>
+          <div class="locator">
+             <h2>Store Locator</h2>
+              <p><b>Cairo</b><br><pre class="details">        korba:12 Ebrahim St.</pre><br><b>Giza</b><br><pre class="details">       Mohandeseen:85 gezeeret El Arab</pre><br><b>Alexandria</b><br><pre class="details">        korba:1 Ebrahim El Shereif St.</pre><br></p>
+                
+          
+          
+          </div>
+          
+          
+          <div class="contact">
+               <form >
+                  <fieldset> 
+                      <legend>Contact Us</legend>
+                    
+                      <input type="text" placeholder="Name" required/><br/>
+                      <input type="email" placeholder="E-mail" required/><br/>
+                      <textarea cols="40" rows="10" placeholder="Message" required></textarea><br/>
+                      <input type="submit" onclick="welcome()" value="Send" />
+                      <input type="reset" value="reset" />
+                          
+                  </fieldset>
+                  
+              </form>
+            
+          
+          </div>
+       
+     </footer>
+        <script>
+           var string="Smile" ;
+           var array = string.split("");
+           var timer;
+            
+               function framelooper(){
+                if(array.length>0){
+                    document.getElementById("logo").innerHTML+=array.shift();
+                }
+                else {
+                    clearTimeout(timer);
+                    return ;
+                }
+            
+                looptimer = setTimeout('framelooper()',400);
+            }
+            
+        framelooper ();
+            function welcome(){
+	                       alert("you are welcomed");
+                    }
+        
+        </script>
+    
+    
+    </body>
+    
+</html>

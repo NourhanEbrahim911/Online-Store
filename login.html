@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title> customer login </title>
+        <link rel="stylesheet" href="login.css"/>
+    </head>
+    <body>
+        <!-- nav bar-->
+        <div class="nav">
+        <div class="before-nav" >
+            <div class="logo">
+                <img src="smile.png" alt="you should smiler" title="Smile Blease ^_^" width="80px" height="80px"/>
+                <p id="logo"> </p>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search entire store here"/>
+                <img src="search.png" width="40px" height="40px"/>
+        
+            </div>
+            <div class="icons">
+              <ul>
+                  <li>
+                      <div class="drop">
+                          <a href="login.html" class="login">
+                              <img src="login4.png" width="40px" height="40px" title="login"/>
+                          </a>
+                      
+                      <div class="dropdown">
+                        <form>
+                           <label>Email Address*</label>
+                            <input type="email"  placeholder="Enter you email" />
+                            <label>Password*</label>
+                            <input type="password"  placeholder="Enter you password"/>
+                            <h6>* Required Fields</h6>
+                            <a href="#">Forgot Your Password?</a>
+                            <h6>Don't have an account?</h6>
+                            <a href="#">Sign Up</a>
+                            <input type="button" value="LOGIN"/>
+                          
+                        </form>
+                      
+                      </div
+                          </div>
+                  </li>
+                  <h4>Login</h4>
+                  <li>
+                      <a href="register.htm">
+                      <img src="reg2.png"width="40px" height="40px" title="register"/>
+                      </a>
+                  </li>
+                  <h4>Register</h4>
+              </ul>
+            
+            
+            </div>
+        </div>
+        <div class="nav-bar">
+        <ul>
+            <li><a href="home.html" class="active"> HOME</a> </li>
+            <li><a href="women.html">WOMEN</a> </li>
+            <li><a href="men.html">MEN</a> </li>
+        </ul>
+        
+        </div>
+    </div>
+    <!--login content-->
+    <div class="logcontent">
+            <div class="first">
+               <h2>New Customers</h2>
+               <p>
+               By creating an account with our store, you will be able to move through<br/>
+               the checkout process faster, store multiple shipping addresses, view and<br/>
+               track your orders in your account and more.
+               </p>
+               <input type="button" value="Creat An Acount" />
+        
+           </div>
+           <div class="second">
+               <h2>Registered Customers</h2>
+               <p>If you have an account with us, please log in.</p>
+               <label>*Email Address</label>
+               <input type="email" required />
+               <label>*Password</label>
+               <input type="password" required/>
+               <input type="submit" value="LOGIN"/>
+               <a href="#">Forgot Your Password?</a>
+           </div>
+    </div>
+            <!--footer-->        
+      <footer>
+        <div class="about">
+              <h2>About Us</h2>
+              <p>Smile a fashion brand with our delvelopment office<br> based in Alicante,Spain and design studio in Milian,Italy.</p>
+              <img src="phone%204.png" alt="phone" width="50px" height="50px"/>
+              <p class="our">0112567964</p>
+              <div class="clear"></div>
+              <img src="message%203.png" alt="message" width="40px" height="40px"/>
+              <p class="our">orders@smile.com</p>
+              <div class="clear"></div>
+           
+        </div>
+          <div class="locator">
+             <h2>Store Locator</h2>
+              <p><b>Cairo</b><br><pre class="details">        korba:12 Ebrahim St.</pre><br><b>Giza</b><br><pre class="details">       Mohandeseen:85 gezeeret El Arab</pre><br><b>Alexandria</b><br><pre class="details">        korba:1 Ebrahim El Shereif St.</pre><br></p>
+                 <p
+          
+          
+          </div>
+          
+          
+          <div class="contact">
+               <form >
+                  <fieldset> 
+                      <legend>Contact Us</legend>
+                    
+                      <input type="text" placeholder="Name" required/><br/>
+                      <input type="email" placeholder="E-mail" required/><br/>
+                      <textarea cols="40" rows="10" placeholder="Message" required></textarea><br/>
+                      <input type="submit" onclick="welcome()" value="Send" />
+                      <input type="reset" value="reset" />
+                          
+                  </fieldset>
+                  
+              </form>
+            
+          
+          </div>
+       
+     </footer>
+        <script>
+           var string="Smile" ;
+           var array = string.split("");
+           var timer;
+            
+               function framelooper(){
+                if(array.length>0){
+                    document.getElementById("logo").innerHTML+=array.shift();
+                }
+                else {
+                    clearTimeout(timer);
+                    return ;
+                }
+            
+                looptimer = setTimeout('framelooper()',400);
+            }
+            
+        framelooper ();
+            function welcome(){
+	                       alert("you are welcomed");
+                    }
+        
+        </script>
+    
+    
+    </body>
+    
+</html>

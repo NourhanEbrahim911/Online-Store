@@ -1,0 +1,23 @@
+body{
+    background-color: white;
+}
+ul{
+    list-style-type: none;
+    margin-left: 20%;
+    margin-top: 5%;
+    text-align: center;
+}
+ul li img{
+    width: 270px;
+    height: 270px;
+    cursor: pointer;
+}
+ul li{
+    display: inline-block;
+    margin-left: 5%;
+}
+ul li img:hover{
+    width: 300px;
+    height: 300px;
+    transition-duration: 1s;
+}

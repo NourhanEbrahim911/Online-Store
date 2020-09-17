@@ -1,0 +1,353 @@
+body{
+    background-image:url(6.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    height: auto;
+    margin:0;
+    padding: 0;
+}
+/*nav bar*/
+.nav{
+    width: 100%;
+    height: 200px;
+        
+}
+.logo{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    margin-left: 3%;
+    margin-top: 0.5%;
+}
+#logo{
+    margin-top: -4.5%;
+}
+.logo p{
+    font-size: 50px;
+    color:black;
+    
+        
+}
+
+.search{
+    width:86%;
+    height: 200px;
+    position: absolute;
+    margin-left: 14%;
+    margin-top: 6%;
+}
+.search img{
+    float: left;
+    border:  1px solid black;
+    border-right: none;
+    outline: 0;
+}
+.search input{
+   height: 41.9px;
+    width:500px;
+    outline: 0;
+    border:  1px solid black;
+    border-left: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 3px;
+}
+.search input:focus{
+    width: 93.2%;
+    transition-duration: 2s;
+}
+input::placeholder{
+	color:black;
+}
+.icons ul{
+    width: 400px;
+    height: 100px;
+    display: block;
+    float: right;
+    margin-top: 2%;
+
+}
+.icons h4{
+    display: inline;
+    margin-right: 20px;
+}
+.icons li{
+    display: inline-block;
+    cursor: pointer;
+}
+.icons img:hover{
+    width: 50px;
+    height: 50px;
+}
+.drop:hover .dropdown{
+    display: block;
+}
+.dropdown{
+    width: 270px;
+    height: 350px;
+    margin-top: 0.2%;
+    background-color: #DDD;
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    z-index: 1;
+    padding: 16px;
+    font-size: 20px;
+    border: 1px solid black;
+    
+    
+}
+
+.dropdown h6{
+    margin-top: -1%;
+}
+
+.dropdown input{
+    display: block;
+    width: 270px;
+    height: 40px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    outline: 0;
+}
+.dropdown input::placeholder{
+    font-size: 13px;
+    padding-left: 3px;
+}
+.dropdown input[type=button]{
+    width: 120px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    
+}
+
+.dropdown input[type=button]:hover{
+    background-color: white;
+    color: black;
+}
+.dropdown a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    margin-top: -9%;
+    margin-bottom: 3%;
+}
+
+
+
+.nav-bar ul{
+    list-style-type: none;
+    width: 100%;
+    height: 7%;
+    background-color: black;
+    padding-top: 1%;
+    position: absolute;
+    margin-top: 10%;
+    
+    
+}
+.nav-bar li{
+    display: inline;
+    font-size: 30px;
+}
+.nav-bar li a{
+    text-decoration: none;
+    margin-left: 20%;
+    color: white;
+}
+.nav-bar li a:hover{
+    color: darkturquoise;
+    transition-duration: 2s;
+}
+.nav-bar li a.active{
+    color:darkturquoise;
+}
+
+/*sidebar*/
+table{
+    position: absolute;
+    border: none;
+    margin-top: 13.5%;
+    width: 20%;
+    height: 1000px;
+    text-align: center;
+    background-color: black;
+}
+
+table a{
+    text-decoration: none;
+    color: white;
+    font-size: 250%;
+    width: 20%;
+}
+
+table td{
+    padding: 3%;
+    border:none;
+    cursor: pointer;
+}
+table td:hover a{
+    color: black;
+    
+}
+table td:hover {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+iframe{
+    margin-top: 3.5%;
+    margin-left: 19.9%;
+    width: 79.8%;
+    height: 1000px;
+}
+/*footer*/
+footer{
+    width:100%;
+    position: absolute;
+    height: 330px;
+    background-image: url(m.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 1%;
+    padding-top:1%;
+}
+ /*about us*/
+footer .about{
+    width:500px;
+    
+    margin-left: 3%;
+}
+
+footer .about h2{
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+footer .about p{
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
+footer img{
+ display: inline;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+.our{
+    display: inline;
+}
+
+footer .clear{
+    clear: both;
+}
+
+/*store locator*/
+.locator{
+    margin-left: 45%;
+    margin-top: -250px;
+}
+
+.locator h2{
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.locator .details{
+    font-family: serif;
+    font-size: 15px;
+}
+
+/*contact us*/
+.contact{
+    width: 400px;
+    height: 300px;
+    margin-top: -22.5%;
+    float: right;
+    margin-right: 1%;
+}
+.img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact input{
+    margin-bottom: 5px;
+    border: 1px solid black;
+    padding-left: 5px;
+    margin-left: 20%;
+    height: 18px;
+    height: 25px;
+    width: 200px;
+}
+
+
+textarea::placeholder{
+    color: black;
+}
+textarea {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    padding-left: 5px;
+    margin-right: 10px;
+}
+footer legend{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+footer fieldset{
+    width: 100px;
+    border-color: black;
+    
+}
+
+.contact input[type=submit]{
+    margin-left: 40%;
+    width: 75px;
+    height: 30px;
+    border-radius: 5px;
+    padding-right: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monaco;
+    background-color: black;
+    color: white;
+    cursor: pointer
+}
+.contact input[type=submit]:hover{
+    background-color: white;
+    color: black;
+}
+.contact input[type=submit],.contact input[type=reset]{
+    width: 75px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-right: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monaco;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-left: 25%;
+}
+.contact input[type=reset]{
+margin-left: -1px;
+}
+.contact input[type=submit]:hover{
+    background-color: white;
+    color: black;
+}
+.contact input[type=reset]:hover{
+    background-color: white;
+    color: black;
+}
